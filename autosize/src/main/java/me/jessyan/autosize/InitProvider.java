@@ -35,14 +35,14 @@ import me.jessyan.autosize.utils.AutoSizeUtils;
 public class InitProvider extends ContentProvider {
     @Override
     public boolean onCreate() {
-        Context application = getContext().getApplicationContext();
-        if (application == null) {
-            application = AutoSizeUtils.getApplicationByReflect();
-        }
-        AutoSizeConfig.getInstance()
-                .setLog(true)
-                .init((Application) application)
-                .setUseDeviceSize(false);
+//         Context application = getContext().getApplicationContext();
+//         if (application == null) {
+//             application = AutoSizeUtils.getApplicationByReflect();
+//         }
+//         AutoSizeConfig.getInstance()
+//                 .setLog(true)
+//                 .init((Application) application)
+//                 .setUseDeviceSize(false);
         return true;
     }
 
